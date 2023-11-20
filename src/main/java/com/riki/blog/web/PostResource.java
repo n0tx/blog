@@ -5,6 +5,7 @@ import com.riki.blog.dto.request.PostDtoRequest;
 import com.riki.blog.dto.response.ListPostDtoResponse;
 import com.riki.blog.dto.response.PostDtoResponse;
 import com.riki.blog.service.PostService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,7 +24,7 @@ public class PostResource {
     }
 
     @PostMapping("/posts")
-    public ResponseEntity<PostDtoResponse> createPost(@RequestBody PostDtoRequest postDto) {
+    public ResponseEntity<PostDtoResponse> createPost(@Valid @RequestBody PostDtoRequest postDto) {
         return ResponseEntity.ok(postService.createPost(postDto));
     }
 
@@ -43,7 +44,7 @@ public class PostResource {
     }
 
     @PutMapping("/posts/{id}")
-    public ResponseEntity<PostDtoResponse> updatePost(@RequestBody PostDtoRequest postDtoRequest,
+    public ResponseEntity<PostDtoResponse> updatePost(@Valid @RequestBody PostDtoRequest postDtoRequest,
                                                       @PathVariable(name = "id") Long id) {
         PostDtoResponse postDtoResponse = postService.updatePost(postDtoRequest, id);
         return new ResponseEntity<>(postDtoResponse, HttpStatus.OK);
