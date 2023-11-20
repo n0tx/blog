@@ -1,10 +1,14 @@
 package com.riki.blog.service;
 
-import com.riki.blog.dto.PostDto;
+import com.riki.blog.dto.request.PostDtoRequest;
+import com.riki.blog.dto.response.ListPostDtoResponse;
+import com.riki.blog.dto.response.PostDtoResponse;
 
 
 public interface PostService {
-    PostDto createPost(PostDto postDto);
+    PostDtoResponse createPost(PostDtoRequest postDto);
 
-    PostDto getPostById(Long id);
+    PostDtoResponse getPostById(Long id);
+
+    ListPostDtoResponse getAllPosts(int pageNo, int pageSize, String sortBy, String sortDir);
 }
