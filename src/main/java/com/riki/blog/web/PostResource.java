@@ -6,6 +6,7 @@ import com.riki.blog.dto.response.ListPostDtoResponse;
 import com.riki.blog.dto.response.PostDtoResponse;
 import com.riki.blog.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -39,5 +40,18 @@ public class PostResource {
             @RequestParam(value = "sortDir", defaultValue = PaginationSorting.DEFAULT_SORT_DIRECTION, required = false) String sortDir
     ) {
         return postService.getAllPosts(pageNo, pageSize, sortBy, sortDir);
+    }
+
+    @PutMapping("/posts/{id}")
+    public ResponseEntity<PostDtoResponse> updatePost(@RequestBody PostDtoRequest postDtoRequest,
+                                                      @PathVariable(name = "id") Long id) {
+        PostDtoResponse postDtoResponse = postService.updatePost(postDtoRequest, id);
+        return new ResponseEntity<>(postDtoResponse, HttpStatus.OK);
+    }
+
+    @DeleteMapping("/posts/{id}")
+    public ResponseEntity<String> deletePost(@PathVariable(name = "id") Long id) {
+        postService.deletePostById(id);
+        return new ResponseEntity<>("Post entity deleted successfully", HttpStatus.OK);
     }
 }

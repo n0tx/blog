@@ -35,8 +35,7 @@ public class PostServiceImpl implements PostService {
     @Override
     public PostDtoResponse createPost(PostDtoRequest postDto) {
         Long userId = postDto.getUserId();
-        User user = userRepository.findById(userId)
-                .orElseThrow(()-> new RuntimeException("Invalid User Id: " + userId));
+        User user = findUserByIdWithExceptionMessage(userId);
 
         Post post = mapToEntity(postDto);
         post.setUser(user);
@@ -48,7 +47,7 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public PostDtoResponse getPostById(Long id) {
-        Post post = postRepository.findById(id).orElseThrow(()-> new ResourceNotFoundException("Post", "id", id));
+        Post post = findPostByIdWithExceptionMessage(id);
         return mapToDto(post);
     }
 
@@ -76,6 +75,35 @@ public class PostServiceImpl implements PostService {
         return postDtoResponse;
     }
 
+    @Override
+    public PostDtoResponse updatePost(PostDtoRequest postDtoRequest, Long id) {
+        Post post = findPostByIdWithExceptionMessage(id);
+        User user = findUserByIdWithExceptionMessage(post.getUser().getId());
+
+        post.setUser(user);
+        post.setTitle(postDtoRequest.getTitle());
+        post.setBody(postDtoRequest.getBody());
+
+        return mapToDto(postRepository.save(post));
+    }
+
+    @Override
+    public void deletePostById(Long id) {
+        Post post = findPostByIdWithExceptionMessage(id);
+        postRepository.delete(post);
+    }
+
+    @Override
+    public Post findPostByIdWithExceptionMessage(Long id) {
+        return postRepository.findById(id).orElseThrow(()-> new ResourceNotFoundException("Post", "id", id));
+    }
+
+    @Override
+    public User findUserByIdWithExceptionMessage(Long id) {
+        return userRepository.findById(id).orElseThrow(()-> new ResourceNotFoundException(
+                "User", "id", id));
+    }
+
     private Post mapToEntity(PostDtoRequest postDto) {
         return modelMapper.map(postDto, Post.class);
     }
@@ -83,4 +111,6 @@ public class PostServiceImpl implements PostService {
     private PostDtoResponse mapToDto(Post post) {
         return modelMapper.map(post, PostDtoResponse.class);
     }
+
+
 }
