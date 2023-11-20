@@ -1,7 +1,7 @@
 package com.riki.blog.service.impl;
 
 import com.riki.blog.domain.User;
-import com.riki.blog.dto.RegisterDto;
+import com.riki.blog.dto.request.RegisterDtoRequest;
 import com.riki.blog.repository.UserRepository;
 import com.riki.blog.service.UserService;
 import org.modelmapper.ModelMapper;
@@ -22,13 +22,13 @@ public class UserServiceImpl implements UserService {
     PasswordEncoder passwordEncoder;
 
     @Override
-    public String createUser(RegisterDto registerDto) {
+    public String createUser(RegisterDtoRequest registerDto) {
         User user = mapToEntity(registerDto);
         userRepository.save(user);
         return "User registered successfully!";
     }
 
-    private User mapToEntity(RegisterDto registerDto) {
+    private User mapToEntity(RegisterDtoRequest registerDto) {
         User user = modelMapper.map(registerDto, User.class);
         user.setPassword(passwordEncoder.encode(registerDto.getPassword()));
         return user;

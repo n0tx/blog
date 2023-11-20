@@ -1,9 +1,9 @@
-package com.riki.blog.dto;
+package com.riki.blog.dto.request;
 
 import lombok.Data;
 
 @Data
-public class PostDto {
+public class PostDtoRequest {
     private Long id;
     private String title;
     private String body;

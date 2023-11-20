@@ -1,8 +1,8 @@
 package com.riki.blog.service;
 
-import com.riki.blog.dto.RegisterDto;
+import com.riki.blog.dto.request.RegisterDtoRequest;
 
 
 public interface UserService {
-    String createUser(RegisterDto registerDto);
+    String createUser(RegisterDtoRequest registerDto);
 }
