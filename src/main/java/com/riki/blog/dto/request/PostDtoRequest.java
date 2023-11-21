@@ -6,6 +6,7 @@ import lombok.Data;
 
 @Data
 public class PostDtoRequest {
+    private Long id;
     @NotEmpty
     private String title;
     @NotEmpty
