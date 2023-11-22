@@ -16,11 +16,6 @@ public class BlogApplication {
 		return new ModelMapper();
 	}
 
-	@Bean
-	public static  PasswordEncoder passwordEncoder() {
-		return new BCryptPasswordEncoder();
-	}
-
 	public static void main(String[] args) {
 		SpringApplication.run(BlogApplication.class, args);
 	}
