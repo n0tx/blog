@@ -10,7 +10,7 @@
 
 ### Using Docker
 
-- pull docker image
+> pull docker image
  
 ```text
 docker pull rcandra612/blog-api:latest
@@ -22,7 +22,7 @@ docker pull rcandra612/blog-api:latest
 ![image](https://github.com/n0tx/blog/assets/44139279/e18424cc-2ac7-4f45-bcf9-fb1881cfa940)
    
 
-- check downloaded docker images
+> check downloaded docker images
    
 ```text
 docker images
@@ -31,7 +31,7 @@ docker images
 ![image](https://github.com/n0tx/blog/assets/44139279/3202eda8-1777-4bb2-a4c3-9484f9e06846)
 
 
-- run the docker image
+> run the docker image
 
 ```text
 docker run -p 8080:8080 c2680123e9c3
@@ -40,7 +40,7 @@ docker run -p 8080:8080 c2680123e9c3
 ![image](https://github.com/n0tx/blog/assets/44139279/fba33799-b5ab-481e-94ac-8e73e76f43ef)
 
 
-- access h2db via browser
+> access h2db via browser
 
 url address
 ```text
@@ -58,7 +58,7 @@ jdbc:h2:mem:blog
 ![image](https://github.com/n0tx/blog/assets/44139279/82b7cad8-696d-4297-8cc4-b3cf9e5b348c)
 
 
-- access swagger openapi
+> access swagger openapi
 
 ```text
 http://localhost:8080/swagger-ui/index.html
