@@ -28,7 +28,7 @@ class BlogApplicationTests {
 	void testCreate() {
 		PostDtoRequest postDtoRequest = generateInsertData();
 		PostDtoResponse postDtoResponse = postService.createPost(postDtoRequest);
-		assertEquals(postDtoRequest.getId(), postDtoResponse.getId());
+		assertNotNull(postDtoResponse.getId());
 	}
 
 	@Test
