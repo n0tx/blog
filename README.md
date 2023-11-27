@@ -3,11 +3,12 @@ Springboot, H2DB, Spring Security, JWT, JPA, Rest API, List Pagination and Unit 
 
 
 ## How to setup and run
-
+1. [Menggunakan Docker](#menggunakan-docker)
 
 2. [Menggunakan cloned github source](#menggunakan-cloned-github-source)
 
 ### Menggunakan Docker
+
 
    pull docker image
 
@@ -91,10 +92,8 @@ Springboot, H2DB, Spring Security, JWT, JPA, Rest API, List Pagination and Unit 
 
    ![image](https://github.com/n0tx/blog/assets/44139279/310c1c5b-830d-4719-80ae-186c28c1e4ca)
    
+   ### Menggunakan cloned github source
    
-
-# Menggunakan cloned github source
-
    git clone souce dari github
    
    ```text
@@ -133,5 +132,3 @@ Springboot, H2DB, Spring Security, JWT, JPA, Rest API, List Pagination and Unit 
    check swagger openapi
    ![image](https://github.com/n0tx/blog/assets/44139279/33111d87-b04f-4879-aa88-ce9020745960)
 
-   
-1. [Menggunakan Docker](#menggunakan-docker)
