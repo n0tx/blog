@@ -91,11 +91,11 @@ http://localhost:8080/swagger-ui/index.html
 - existing users:
 `admin`, `riki`
 
-![image](https://github.com/n0tx/blog/assets/44139279/9481b96c-7cee-4c70-ae2a-fb1d4de40523)
-
 - `admin`, full granted for add and change data (create, update, delete)
 
 - the endpoint requires authorization
+
+![image](https://github.com/n0tx/blog/assets/44139279/9481b96c-7cee-4c70-ae2a-fb1d4de40523)
  
 ![image](https://github.com/n0tx/blog/assets/44139279/a6522a11-a97a-41e7-9ca5-0a8ceff8e890)
 
