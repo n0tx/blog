@@ -1,8 +1,16 @@
-# Springboot Blog API
-Simple Restful Blog API Application Use Spring Boot
+# Springboot Restful Blog API Application
+Springboot, H2DB, Spring Security, JWT, JPA, Rest API, Unit Test
 
-cara setup dan menjalankan aplikasi
-1. Menggunakan Docker
+
+## How to setup and run
+
+# Mengunakan Docker
+
+### Menggunakan cloned github source
+
+
+
+2. Menggunakan cloned github source
 
    pull docker image
 
@@ -86,7 +94,7 @@ cara setup dan menjalankan aplikasi
 
    ![image](https://github.com/n0tx/blog/assets/44139279/310c1c5b-830d-4719-80ae-186c28c1e4ca)
 
-2. menggunkan source
+3. menggunkan source
 
    git clone souce dari github
    
@@ -109,6 +117,10 @@ cara setup dan menjalankan aplikasi
    ```text
    ./mvnw test
    ```
+   ![image](https://github.com/n0tx/blog/assets/44139279/fbab2fc5-e8cc-4926-bc3a-bc7e58148aa3)
+   ![image](https://github.com/n0tx/blog/assets/44139279/1c36bcfa-4829-4a1d-9b4a-9007e6047bdf)
+
+
    
    ```text
    ./mvnw spring-boot:run
@@ -122,19 +134,6 @@ cara setup dan menjalankan aplikasi
    check swagger openapi
    ![image](https://github.com/n0tx/blog/assets/44139279/33111d87-b04f-4879-aa88-ce9020745960)
 
+   ## Menggunakan Docker
+   Click [pakai docker](#menggunakan-docker)
 
-   
-
-
-
-
-
-   
-
-
-
-
-
-
-
-5. 
