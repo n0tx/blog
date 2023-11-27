@@ -1,16 +1,13 @@
 # Springboot Restful Blog API Application
-Springboot, H2DB, Spring Security, JWT, JPA, Rest API, Unit Test
+Springboot, H2DB, Spring Security, JWT, JPA, Rest API, List Pagination and Unit Test
 
 
 ## How to setup and run
 
-# Mengunakan Docker
 
-### Menggunakan cloned github source
+2. [Menggunakan cloned github source](#menggunakan-cloned-github-source)
 
-
-
-2. Menggunakan cloned github source
+### Menggunakan Docker
 
    pull docker image
 
@@ -93,8 +90,10 @@ Springboot, H2DB, Spring Security, JWT, JPA, Rest API, Unit Test
    check pada database table post
 
    ![image](https://github.com/n0tx/blog/assets/44139279/310c1c5b-830d-4719-80ae-186c28c1e4ca)
+   
+   
 
-3. menggunkan source
+# Menggunakan cloned github source
 
    git clone souce dari github
    
@@ -134,6 +133,5 @@ Springboot, H2DB, Spring Security, JWT, JPA, Rest API, Unit Test
    check swagger openapi
    ![image](https://github.com/n0tx/blog/assets/44139279/33111d87-b04f-4879-aa88-ce9020745960)
 
-   ## Menggunakan Docker
-   Click [pakai docker](#menggunakan-docker)
-
+   
+1. [Menggunakan Docker](#menggunakan-docker)
