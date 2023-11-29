@@ -164,7 +164,7 @@ http://localhost:8080/h2-ui
 
 ## Using the cloned github source
 
-- ***git clone souce dari github***
+- ***git clone souce from github***
 
 ```text
 git clone https://github.com/n0tx/blog.git
