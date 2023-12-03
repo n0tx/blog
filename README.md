@@ -9,6 +9,14 @@
 
 
 ## Using Docker
+- [pull docker image](#pull-docker-image)
+- [check downloaded docker images](#check-downloaded-docker-images)
+- [run the docker image](#run-the-docker-image)
+- [access h2db via browser](#access-h2db-via-browser)
+- [access swagger openapi](#access-swagger-openapi)
+- [test list api endpoints that do not have authorization checks](#test-list-api-endpoints-that-do-not-have-authorization-checks)
+
+---
 
 - ***pull docker image***
  
