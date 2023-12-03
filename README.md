@@ -125,6 +125,7 @@ http://localhost:8080/swagger-ui/index.html
 ---
 - #### ***existing users:***
 ---
+
 `admin`, `riki`
 
 > `admin`, full granted for add and change data (create, update, delete)
@@ -218,7 +219,15 @@ http://localhost:8080/h2-ui
 
 ## Using the cloned github source
 
-- #### ***git clone souce from github***
+- [git clone source from github](#git-clone-source-from-github)
+- [run springboot using maven cli](#run-springboot-using-maven-cli)
+- [as optional we can do test first before run the application](#as-optional-we-can-do-test-first-before-run-the-application)
+- [check h2 database](#check-h2-database)
+- [check swagger openapi](#check-swagger-openapi)
+
+---
+- #### ***git clone source from github***
+---
 
 ```text
 git clone https://github.com/n0tx/blog.git
@@ -226,8 +235,9 @@ git clone https://github.com/n0tx/blog.git
 
 ![image](https://github.com/n0tx/blog/assets/44139279/a5059df5-4e1d-4b7f-8c18-87710f1c02d2)
 
-
+---
 - #### ***run springboot using maven cli***
+---
 
 ```text
 ls
@@ -235,7 +245,9 @@ ls
 
 ![image](https://github.com/n0tx/blog/assets/44139279/bbccbf0a-58ff-4994-ad14-e71ba6204346)
 
+---
 - #### ***as optional we can do test first before run the application***
+---
 
 ```text
 ./mvnw test
@@ -250,15 +262,20 @@ ls
 ```
 ![image](https://github.com/n0tx/blog/assets/44139279/b2b51e1a-3c3d-4487-9aac-167c246631a5)
 
-
+---
 - #### ***check h2 database***
+---
+
 ```text
 http://localhost:8080/h2-ui
 ```
 
 ![image](https://github.com/n0tx/blog/assets/44139279/b06e2324-0346-4d95-9182-9f7730ace333)
 
+---
 - #### ***check swagger openapi***
+---
+
 ```text
 http://localhost:8080/swagger-ui/index.html
 ```
