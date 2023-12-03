@@ -21,7 +21,7 @@
 - [must login first to get token](#must-login-first-to-get-token)
 - [existing users](#existing-users)
 - [the endpoint requires authorization](#the-endpoint-requires-authorization)
-- [auth Login uses admin user and password to get token](#auth-login-uses-admin-user-and-password-to-get-token)
+- [auth login uses admin user and password to get token](#auth-login-uses-admin-user-and-password-to-get-token)
 - [input user admin, password admin at login post request](#input-user-admin-password-admin-at-login-post-request)
 - [success login and get the token](#success-login-and-get-the-token)
 - [try the endpoint which need the token authorization](#try-the-endpoint-which-need-the-token-authorization)
@@ -141,7 +141,7 @@ http://localhost:8080/swagger-ui/index.html
 ![image](https://github.com/n0tx/blog/assets/44139279/9930187c-823d-4846-922c-203a3a5954c7)
 
 ---
-- #### ***auth Login uses admin user and password to get token***
+- #### ***auth login uses admin user and password to get token***
 ---
 
 ![image](https://github.com/n0tx/blog/assets/44139279/6636e119-53c0-41f5-9df5-a452583b9d8c)
