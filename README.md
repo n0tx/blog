@@ -15,8 +15,21 @@
 - [access h2db via browser](#access-h2db-via-browser)
 - [access swagger openapi](#access-swagger-openapi)
 - [test list api endpoints that do not have authorization checks](#test-list-api-endpoints-that-do-not-have-authorization-checks)
-
-
+- [try running on api endpoing list](#try-running-on-api-endpoing-list)
+- [get results from get request list api endpoint](#get-results-from-get-request-list-api-endpoint)
+- [test endpoints that use authorization](#test-endpoints-that-use-authorization)
+- [must login first to get token](#must-login-first-to-get-token)
+- [existing users](#existing-users:)
+- [the endpoint requires authorization](#the-endpoint-requires-authorization)
+- [using user and password admin for login authentication to get the token](#using-user-and-password-admin-for-login-authentication-to-get-the-token)
+- [input user admin, password admin at login post request](#input-user-admin,-password-admin-at-login-post-request)
+- [success login and get the token](#success-login-and-get-the-token)
+- [try the endpoint which need the token authorization](#try-the-endpoint-which-need-the-token-authorization)
+- [input the token](#input-the-token)
+- [try to send post data request to createBlog(#try-to-send-post-data-request-to-createBlog)
+- [get created or 201 HTTP status response](#get-created-or-201-HTTP-status-response)
+- [check the database at posts table](#check-the-database-at-posts-table)
+  
 ---
 - #### ***pull docker image***
 ---
