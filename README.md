@@ -22,7 +22,7 @@
 - [existing users](#existing-users)
 - [the endpoint requires authorization](#the-endpoint-requires-authorization)
 - [using user and password admin for login authentication to get the token](#using-user-and-password-admin-for-login-authentication-to-get-the-token)
-- [input user admin, password admin at login post request](#input-user-admin,-password-admin-at-login-post-request)
+- [input user admin, password admin at login post request](#input-user-admin-password-admin-at-login-post-request)
 - [success login and get the token](#success-login-and-get-the-token)
 - [try the endpoint which need the token authorization](#try-the-endpoint-which-need-the-token-authorization)
 - [input the token](#input-the-token)
