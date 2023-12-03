@@ -75,7 +75,7 @@ http://localhost:8080/swagger-ui/index.html
 ![image](https://github.com/n0tx/blog/assets/44139279/423cfea7-487f-44aa-bb72-53f194226599)
 
 
-- ***test list api endpoints that do not have authorization checks***
+- ### ***test list api endpoints that do not have authorization checks***
 
 ![image](https://github.com/n0tx/blog/assets/44139279/23a1ce87-94ac-468d-9221-0851ace0afa7)
 
