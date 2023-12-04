@@ -8,7 +8,8 @@
 2. [Using the cloned github source](#using-the-cloned-github-source)
 
 
-## Using Docker
+1. ## Using Docker
+
 - [pull docker image](#pull-docker-image)
 - [check downloaded docker images](#check-downloaded-docker-images)
 - [run the docker image](#run-the-docker-image)
@@ -217,7 +218,7 @@ http://localhost:8080/h2-ui
 ![image](https://github.com/n0tx/blog/assets/44139279/310c1c5b-830d-4719-80ae-186c28c1e4ca)
 
 
-## Using the cloned github source
+2. ## Using the cloned github source
 
 - [git clone source from github](#git-clone-source-from-github)
 - [run springboot using maven cli](#run-springboot-using-maven-cli)
