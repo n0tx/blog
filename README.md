@@ -129,6 +129,9 @@ http://localhost:8080/swagger-ui/index.html
 
 `admin`, `riki`
 
+> username: `admin`, password: `admin`
+> username: `riki`, password: `riki`
+
 > `admin`, full granted for add and change data (create, update, delete)
 
 ---
