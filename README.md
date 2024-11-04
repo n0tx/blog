@@ -133,7 +133,9 @@ http://localhost:8080/swagger-ui/index.html
 
 > username: `riki`, password: `riki`
 
-> `admin`, full granted for add and change data (create, update, delete)
+> `admin`: has admin role, full granted for add and change data (create, update, delete)
+
+> `riki`: has user role which can get user details and get user list
 
 ---
 12. #### `the endpoint requires authorization`
