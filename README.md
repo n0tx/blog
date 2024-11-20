@@ -28,7 +28,7 @@
 16. [try the endpoint which need the token authorization](#try-the-endpoint-which-need-the-token-authorization)
 17. [input the token](#input-the-token)
 18. [try to send post data request to createBlog](#try-to-send-post-data-request-to-createBlog)
-19. [get created or 201 HTTP status response](#get-created-or-201-HTTP-status-response)
+19. [Get created or 201 HTTP status response](#Get-created-or-201-HTTP-status-response)
 20. [check the database at posts table](#check-the-database-at-posts-table)
   
 ---
@@ -208,7 +208,7 @@ token example
 ![image](https://github.com/n0tx/blog/assets/44139279/4abbc433-b9df-4ef2-98ef-e4d9c34ac216)
 
 ---
-19. #### `get created or 201 HTTP status response`
+19. #### `Get created or 201 HTTP status response`
 ---
 
 ![image](https://github.com/n0tx/blog/assets/44139279/d63859d0-caab-4da3-af4e-0138e04a142c)
